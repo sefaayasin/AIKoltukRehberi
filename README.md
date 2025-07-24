@@ -1,3 +1,5 @@
+![Uygulama Arayüzü](background1.png)
+
 # 🎭 Tiyatro Koltuk Seçimi Rehberi
 
 Bu proje, tiyatro salonlarında **kullanıcının kişisel tercih ve ihtiyaçlarına göre en uygun 5 koltuğu** öneren bir masaüstü uygulamasıdır. Kullanıcıdan alınan bilgiler doğrultusunda, makine öğrenmesi modelleri ile **tercih ve memnuniyet tahmini** yapılır ve sonuçlar görsel olarak sunulur.
