@@ -33,8 +33,6 @@ Makine öğrenmesi destekli bu masaüstü uygulaması, tiyatro seyircilerinin ki
 ## 🚀 Başlatma Adımları
 
 1. Gerekli kütüphaneleri kurun:
-   ```bash
-   pip install pyqt5 scikit-learn pandas numpy
 
 2. Uygulamayı çalıştırmak için:
 
