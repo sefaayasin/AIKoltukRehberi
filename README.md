@@ -1,42 +1,62 @@
-# 🎭 Tiyatro Koltuk Rehberi
+# 🎭 Tiyatro Koltuk Seçimi Rehberi
 
-Makine öğrenmesi destekli bu masaüstü uygulaması, tiyatro seyircilerinin kişisel tercihlerini analiz ederek en uygun koltukları önerir. PyQt5 ile geliştirilen uygulama, kullanıcıdan alınan bilgiler doğrultusunda en iyi 5 koltuğu belirler ve salon görseli üzerinde yeşil renkle gösterir.
+Bu proje, tiyatro salonlarında **kullanıcının kişisel tercih ve ihtiyaçlarına göre en uygun 5 koltuğu** öneren bir masaüstü uygulamasıdır. Kullanıcıdan alınan bilgiler doğrultusunda, makine öğrenmesi modelleri ile **tercih ve memnuniyet tahmini** yapılır ve sonuçlar görsel olarak sunulur.
 
-## 🗂️ Proje Dosyaları
+---
 
-| Dosya Adı                    | Açıklama |
-|-----------------------------|----------|
-| `app_icon.png`              | Uygulama penceresi için ikon dosyası |
-| `background1.png`           | Uygulamanın ana arka plan görseli |
-| `background2.png`           | Koltuk haritası arka plan görseli |
-| `koltuk_verisi.csv`         | Tiyatro salonu koltuklarına ait yapay veriseti |
-| `memnuniyet_modeli.pkl`     | Kullanıcı memnuniyetini tahmin eden regresyon modeli |
-| `tercih_modeli.pkl`         | Kullanıcının koltuğu tercih edip etmeyeceğini tahmin eden sınıflandırma modeli |
-| `pyqt5_koltuk_rehberi.ipynb`| PyQt5 ile yazılmış arayüz uygulamasının notebook dosyası |
+## 🧩 Proje Özellikleri
 
-## ⚙️ Geliştirilen Özellikler
+### ✅ Kullanıcı Girdileri
+- Yaş
+- Cinsiyet
+- Tiyatro Deneyimi
+- Ses Kalitesi Tercihi
+- Sahneye Yakınlık Tercihi
+- Fiyat Tercihi
 
-- 🎯 Kişisel tercihlere dayalı 5 ideal koltuğu önerir
-- 🧠 ML modelleri ile tercih ve memnuniyet tahmini yapar
-- 🎨 Modern ve kullanıcı dostu arayüz (PyQt5)
-- 🖼️ Salon haritası üzerinde görsel geri bildirim sağlar
-- 📁 Tüm dosyalar taşınabilir, aynı klasörde çalışacak şekilde yapılandırılmıştır
+### 🧠 Makine Öğrenmesi Modelleri
+- `tercih_modeli.pkl`: Kullanıcının bir koltuğu tercih etme ihtimalini tahmin eder.
+- `memnuniyet_modeli.pkl`: Tercih edilen koltuktan alınacak memnuniyet puanını tahmin eder.
 
-## 🧪 Kullanılan Teknolojiler
+### 🖼️ Görsel Arayüz
+- PyQt5 ile tasarlanmış modern kullanıcı arayüzü.
+- Koltuk önerileri, salon yerleşimi üzerinde **yeşil renk** ile vurgulanarak gösterilir.
+- Arka plan görselleri ve özel ikon desteğiyle estetik bir deneyim sunar.
 
-- Python 3.8+
-- PyQt5
-- scikit-learn
-- pandas, numpy
-- joblib
+---
 
-## 🚀 Başlatma Adımları
+## 📁 Proje Dosyaları
 
-1. Gerekli kütüphaneleri kurun:
+| Dosya Adı                      | Açıklama |
+|-------------------------------|----------|
+| `app_icon.png`                | Uygulama simgesi |
+| `background1.png`             | Ana arayüz arka planı |
+| `background2.png`             | Koltuk haritası arka planı |
+| `koltuk_verisi.csv`           | Eğitim verisi (koltuk bilgileri) |
+| `tercih_modeli.pkl`           | Tercih tahmin modeli |
+| `memnuniyet_modeli.pkl`       | Memnuniyet tahmin modeli |
+| `pyqt5_koltuk_rehberi.ipynb`  | Arayüz ve model entegrasyonunun anlatıldığı notebook |
 
-2. Uygulamayı çalıştırmak için:
+---
 
-pyqt5_koltuk_rehberi.ipynb dosyasını Jupyter ile açarak adım adım çalıştırabilirsiniz.
+## 🎯 Uygulama Akışı
 
-👤 Geliştirici
-Sefa Yasin Namlı
+1. Kullanıcı formu aracılığıyla tercihlerini belirtir.
+2. Makine öğrenmesi modelleri en iyi 5 koltuğu belirler.
+3. Önerilen koltuklar yazılı olarak ve **koltuk haritası görselinde yeşil renkle** sunulur.
+
+---
+
+## 🧠 Amaç
+
+Bu proje, yapay zekâ destekli kişisel öneri sistemlerinin gerçek hayattaki bir senaryoya nasıl uygulanabileceğini göstermektedir. Eğitim verisi, modeller ve görsel bileşenler bu kapsamda bir araya getirilmiştir.
+
+---
+
+## 👤 Geliştirici
+
+**Sefa Yasin Namlı**  
+🔍 Veri Analizi & Uygulama Geliştirme  
+
+---
+
